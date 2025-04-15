@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+body {
+    font-family: 'Open Sauce Sans', sans-serif;
+    color: black;
+}
+
+@theme{
+    --color-shad: #8D8D8D;
+    --color-yellowish: #E38934;
+}
