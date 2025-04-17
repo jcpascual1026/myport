@@ -21,11 +21,11 @@
   
   <div class="flex text-black w-full">
     
-    <div class="w-1/2 flex flex-col px-10 mx-8" id="Login">
+    <div class="w-1/2 flex flex-col mx-auto " id="Login">
   
       {#if !showLogin}
-        <div class="flex flex-col justify-center">
-          <div class="flex items-center m-4">
+        <div class="flex flex-col justify-center w-full mx-auto">
+          <div class="flex items-center m-2">
             <img alt="The project logo" src={logo} class="h-12 w-auto" />
             <h1 class="ml-1 p-3 font-bold tracking-widest text-2xl">OCTA</h1>
           </div>
@@ -35,22 +35,22 @@
             <p class="text-shad">Please enter your student number</p>
           </div>
   
-          <form on:submit|preventDefault={submitStudentNumber} class="w-full max-w-md mx-auto">
-            <label for="studentNumber" class="block text-sm font-bold mb-2">Student Number</label>
+          <form on:submit|preventDefault={submitStudentNumber} class="w-full max-w-md mx-auto text-center">
+            <label for="studentNumber" class="block text-sm font-bold mb-2 ml-[-7rem] w-full">Student Number</label>
             <input 
               type="text" 
               id="studentNumber" 
               bind:value={studentNumber} 
               placeholder="Ex. 0324-0000" 
               required
-              class="border px-2 py-2 w-full rounded mb-14 text-shad hover:text-black"
+              class="border px-2 py-2 w-3/4 rounded mb-14 text-shad hover:text-black"
               maxlength="9"
             />
           
             <input 
               type="submit" 
               value="Verify" 
-              class="bg-yellowish text-white px-4 py-2 rounded-lg hover:bg-yellow-500 w-full shadow-xl"
+              class="bg-yellowish text-white px-4 py-2 rounded-lg hover:bg-yellow-500 w-3/4 shadow-xl"
               disabled={!studentNumber}
             />
           </form>
@@ -101,8 +101,8 @@
       {/if}
     </div>
   
-    <div class="w-[85vh] h-[100vh]">
-      <img src={login} alt="Login Visual" class="w-full h-full m-0 object-center object-fill ml-10"/>
+    <div class="w-[80vh] h-[100vh]">
+      <img src={login} alt="Login Visual" class="w-full h-full m-0 object-center object-fill"/>
     </div>
   </div>
   
