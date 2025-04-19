@@ -11,3 +11,24 @@ body {
     --color-shad: #8D8D8D;
     --color-yellowish: #E38934;
 }
+
+.transition-wrapper {
+    position: relative;
+    min-height: 40rem;
+  }
+
+  .form-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.buttonh:hover {
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+.buttonh:active {
+    transform: scale(0.95);
+}
