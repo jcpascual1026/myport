@@ -14,8 +14,8 @@ body {
 
 .transition-wrapper {
     position: relative;
-    min-height: 40rem;
-  }
+    min-height: 35rem;
+}
 
   .form-content {
     position: absolute;
@@ -31,4 +31,8 @@ body {
   
 .buttonh:active {
     transform: scale(0.95);
+}
+
+span{
+    color: grey;
 }
